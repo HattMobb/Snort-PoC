@@ -74,6 +74,38 @@ For this question I just had to include a provided username with an invalid pass
 
 ![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/872711e6-2338-4883-94d8-7fd3c7236de6)
 
+## Challenge 4 - PNG
+
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/f459bbd3-923c-49e4-977c-c115730dc5a1)
+
+The rule:
+
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/659ab00a-68d8-4062-ab1b-f926f680011d)
+
+Detailed file read:
+
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/7e811e67-c8b4-43ca-8a7c-0ecddc3d19f1)
+
+
+Softaware version:
+
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/81fb783c-a472-4283-9f51-9a89431c6aaf)
+
+
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/de6fc54b-620c-45d1-a053-c4feab5463f7)
+
+The rule:
+
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/6b9a605b-c548-4460-9c13-e7bfb23e9f42)
+
+
+
+Embedded image format:
+
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/7a16d0d5-e944-4148-9501-a235b8c24c66)
+
+
+
 
 
 
