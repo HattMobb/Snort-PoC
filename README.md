@@ -105,6 +105,70 @@ Embedded image format:
 ![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/7a16d0d5-e944-4148-9501-a235b8c24c66)
 
 
+## Challenge 5 - Torrent/Metafile
+
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/a946ac45-d1c5-479b-b873-5c513e373e70)
+
+Torrent metafiles have a common name extension (.torrent) so this just required me to pipe in the value into the rule: 
+
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/d246fc49-923a-4485-95d2-5127751a2123)
+
+Here we can see futher info on the file including host: 
+
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/e43b00e8-99e6-4853-a412-7e5ba34619f4)
+
+## Challenge 6 Rule Troubleshooting
+
+Running the first rule file, I got the following error:
+
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/ef1b44c8-d63f-4b75-a8fc-8ee18fc8ef0d)
+
+This indicated that a space was missing - an easy fix.
+
+File 2 generated the following error: 
+
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/78c684bb-4dab-4746-87ef-b2bcff9dbeb2)
+
+Indeed, checking the file revealed a missing port number in the rule:
+
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/30ebe6d3-4e1c-43b2-bc37-7691dfabcb0f)
+
+File 3 showed: 
+
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/ee5c06d2-2ef2-4f80-bd31-8fbe09aeb38e)
+
+Both rules shared a conflicting sid, generating the error:
+
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/7f56728c-17c0-45d1-8553-eb6c4e942e26)
+
+The problem with file 4 was incorrect character use AND duplicate sid values:
+
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/e47c3506-c6f1-471f-a4e0-b9a8a7835ae1)
+
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/6c8f86ed-5017-4032-a24b-0107079807bf)
+
+File 5 had incorrect trafic direction (on the second rule) and incorrect ':' placement on both second an third rules  :
+
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/af45a509-d038-4ec1-8d60-b337eb04f0fe)
+
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/aca68488-2cb9-4b39-8079-8fdcb4f7910a)
+
+File 6 didn't generate any errors but had a logic flaw - 
+
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/879b82a9-a8e2-4250-8f67-f7d7bc2c5ce3)
+
+The content parameter required 'GET' to be passed rather than the HEX value.
+
+File 7 also produced no errors but upon opening the file, wasn't specifying a msg value:
+
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/cfae4b7a-92cc-4b89-ba2e-9a390f69dd87)
+
+This challenge was made much easier by simply reading error messages/codes!
+
+
+
+
+
 
 
 
