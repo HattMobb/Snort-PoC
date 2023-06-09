@@ -29,4 +29,32 @@ Rules to catch all FTP traffic:
 
 ![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/89a45cf5-f715-45d7-a1f0-fa4663533f21)
 
+Finding the FTP service name:
+
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/ddd18b39-f3dd-46de-8244-6c9b34a56f1d)
+
+-dvr :  detailed output
+
+-n 10 :  first 10 packets 
+
+-A1 : returns the line and the next line of the searched word
+
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/a1b6c287-abb3-442c-895c-423ca48b4707)
+
+
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/6ce34e0f-9c6d-4475-a6c9-d4ac32430b6a)
+
+Failed FTP login attempts generate the pattern "530 User" so I wrote a rule to catch this on inbound traffic:
+
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/260bde4c-4df3-4a14-9fc6-47b353a3cdcd)
+
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/fc0254c5-e943-45b7-8366-74ddf53c10d6)
+
+
+Successful FTP logis generate the pattern "230 User" so I wrote a rule to catch this on inbound traffic:
+
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/d9418afc-8d40-4b07-8d91-816cf52cb2fe)
+
+
+
 
