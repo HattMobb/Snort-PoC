@@ -56,5 +56,24 @@ Successful FTP logis generate the pattern "230 User" so I wrote a rule to catch 
 ![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/d9418afc-8d40-4b07-8d91-816cf52cb2fe)
 
 
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/8c027144-dac9-47d0-9001-359121f7ea41)
+
+Each FTP login attempt with a valid username and bad password prompts a default message with  pattern "331 Password".
+Rule to catch:
+
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/711e2ecb-9401-4ebd-935a-750db3c2b0b5)
+
+
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/71c1161e-2fb8-41ab-933b-c54539effb29)
+
+For this question I just had to include a provided username with an invalid password:
+
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/e6c38896-fab0-4aa3-b7ea-fa64bd1071aa)
+
+7 failed attempts!
+
+![image](https://github.com/HattMobb/Snort-PoC/assets/134090089/872711e6-2338-4883-94d8-7fd3c7236de6)
+
+
 
 
